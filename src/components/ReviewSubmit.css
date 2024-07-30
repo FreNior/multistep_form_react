@@ -1,0 +1,9 @@
+.submit-message {
+    text-align: center;
+}
+
+.submit-message h2,
+.submit-message h3,
+.submit-message p {
+    margin-bottom: 1rem;
+}

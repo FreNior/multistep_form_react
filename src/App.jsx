@@ -12,6 +12,7 @@ import './App.css'
 
 // Hooks
 import { useForm } from './hooks/useForm'
+import ReviewSubmit from './components/ReviewSubmit'
 
 const formTemplate = {
   name: "",
@@ -32,7 +33,8 @@ function App() {
   const formComponents = [
   <UserForm data={data} updateFieldHandler={updateFieldHandler} />,
   <ReviewForm data={data} updateFieldHandler={updateFieldHandler} />,
-  <Thx data={data} />
+  <Thx data={data} />,
+  <ReviewSubmit />
   ]
 
 

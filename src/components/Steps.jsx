@@ -1,5 +1,5 @@
 import {AiOutlineUser, AiOutlineStar} from 'react-icons/ai'
-import { FiSend } from 'react-icons/fi'
+import { FiSend, FiCheckCircle } from 'react-icons/fi'
 import './Steps.css'
 
 // eslint-disable-next-line react/prop-types
@@ -19,6 +19,11 @@ const Steps = ({ currentStep }) => {
         <div className={`step ${currentStep >=2 ? "active" : ""}`}>
             <FiSend />
             <p>Envio</p>
+        </div>
+
+        <div className={`step ${currentStep >=3 ? "active" : ""}`}>
+            <FiCheckCircle />
+            <p>Conclusão</p>
         </div>
     </div>
   )
